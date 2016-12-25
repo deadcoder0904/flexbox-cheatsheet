@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox Playground</title>
+	<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+	<div class='main'>
+		<header>
+			<h1>👶 ONLY NECESSARY FLEXBOX CHEATSHEET MADE BY `A2K` WITH 💙</h1>
+		</header>
+
+		<h3>APPLYING FLEXBOX PROPERTIES TO AN UNORDER LIST OF ITEMS</h3>
+
+		<ul id="first">
+			<li><kbd>&lt;ul&gt;&lt;/ul&gt;</kbd><br /> is the flex container</li>
+			<li><kbd>&lt;li&gt;&lt;/li&gt;</kbd><br /> are the flex-items</li>
+			<li>ul:-<br /> <kbd>display:flex</kbd></li>
+			<li>li:-<br /> <kbd>flex:1</kbd></li>
+			<li>ul:-<br /> <kbd>flex-direction: row(default)</kbd></li>
+		</ul>
+
+		<h3>MISSING FLEX : 1 PROPERTY</h3>
+
+		<ul id="second">
+			<li>MISSING<br /> <kbd>flex:1</kbd></li>
+			<li>ul:-<br /> <kbd>display:flex</kbd></li>
+			<li>ul:-<br /> <kbd>flex-direction: row</kbd></li>
+		</ul>
+
+		<h3>WRAP AROUND IF THE FLEX ITEMS ARE MORE; DON'T MAKE HORIZONTAL SCROLLBAR (TRY REDUCING BROWSER WINDOW & COMPARE 1st WITH THE CURRENT ONE)</h3>
+
+		<ul id="third">
+			<li><kbd>&lt;ul&gt;&lt;/ul&gt;</kbd><br /> has flex wrap</li>
+			<li>If the list items are more than usual, </li>
+			<li>then we wrap it up so that</li>
+			<li>the users can read all the items</li>
+			<li>properly</li>
+			<li>ul:-<br /> <kbd>display:flex</kbd></li>
+			<li>li:-<br /> <kbd>flex:1</kbd></li>
+			<li>ul:-<br /> <kbd>flex-direction: row</kbd></li>
+			<li>ul:-<br /> <kbd>flex-wrap: wrap</kbd></li>
+			<li>ul:-<br /> <kbd>flex-flow: row wrap</kbd></li>
+		</ul>
+
+		<h3>CENTER THE CONTENT HORIZONTALLY (same as `text-align:center`)</h3>
+
+		<ul id="fourth">
+			<li>ul:-<br /> <kbd>justify-content: center</kbd></li>
+		</ul>
+
+		<ul>
+			<li>OTHER VALUES ARE :-</li>
+			<li>ul:-<br /> <kbd>justify-content: flex-start(default)</kbd></li>
+			<li>ul:-<br /> <kbd>justify-content: flex-end</kbd></li>
+			<li>ul:-<br /> <kbd>justify-content: space-between</kbd></li>
+			<li>ul:-<br /> <kbd>justify-content: space-around</kbd></li>
+			<li>ul:-<br /> <kbd>justify-content: baseline</kbd></li>
+		</ul>
+
+		<h3>CENTER THE CONTENT VERTICALLY</h3>
+
+		<ul id="fifth">
+			<li>ul:-<br /> <kbd>align-items: center</kbd></li>
+		</ul>
+
+		<ul>
+			<li>OTHER VALUES ARE :-</li>
+			<li>ul:-<br /> <kbd>align-items: stretch(default)</kbd></li>
+			<li>ul:-<br /> <kbd>align-items: flex-start</kbd></li>
+			<li>ul:-<br /> <kbd>align-items: flex-end</kbd></li>
+			<li>ul:-<br /> <kbd>align-items: baseline</kbd></li>
+		</ul>
+
+
+		<h3>POSITION THE ITEMS</h3>
+
+		<ul id="ninth">
+			<li>li:-<br /> <kbd>align-items: auto(default)</kbd></li>
+			<li>`align-items: auto` computes to parent's<br /> align-items value or stretch if the<br /> element has no parent.</li>
+			<li>li:-<br /> <kbd>align-items: center</kbd></li>
+			<li>li:-<br /> <kbd>align-items: stretch</kbd></li>
+			<li>li:-<br /> <kbd>align-items: flex-start</kbd></li>
+			<li>li:-<br /> <kbd>align-items: flex-end</kbd></li>
+			<li>li:-<br /> <kbd>align-items: baseline</kbd></li>
+		</ul>
+
+		<h3>ORDER IN FLEXBOX</h3>
+
+		<ul id="sixth">
+			<li>ul(1):-<br /> <kbd>order: 0(default)</kbd></li>
+			<li>ul(2):-<br /> <kbd>order: 2</kbd></li>
+			<li>ul(3):-<br /> <kbd>order: 1</kbd></li>
+			<li>ul(4):-<br /> <kbd>order: 1</kbd></li>
+			<li>ul(5):-<br /> <kbd>order: -1</kbd></li>
+		</ul>
+
+		<h3>GROW IN FLEXBOX</h3>
+
+		<ul id="seventh">
+			<li>ul:-<br /> <kbd>flex-grow: 0(default)</kbd></li>
+			<li>ul:-<br /> <kbd>flex-grow: 1</kbd></li>
+		</ul>
+
+		<h3>BASIS & SHRINK IN FLEXBOX</h3>
+
+		<ul id="eighth">
+			<li>ul:-<br /> <kbd>flex-shrink: 1(default)</kbd></li>
+			<li><br/> Try resizing the browser</li>
+			<li>li:-<br /> <kbd>flex-basis: 300px</kbd></li>
+			<li>ul:-<br /> <kbd>flex-shrink: 10</kbd></li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
