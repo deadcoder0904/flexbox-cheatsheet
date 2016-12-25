@@ -1,6 +1,6 @@
 # flexbox-playground
 
-> :blush: Only Necessary Flexbox Cheatsheet made for me :smile:
+> :blush: Only Necessary Flexbox Cheatsheet made for me :skull:
 
 # Screenshot
 
